@@ -1,0 +1,57 @@
+.grid-item {
+    &:not(:last-child){
+        @include respond(phone){
+            margin-bottom: 2.5rem;
+        }
+    }    
+}
+.grid-figure {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0.5rem;
+   
+
+    figcaption {
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        max-width: 90%;
+        padding: 1rem;
+        background:rgba($color-gray,0.8);
+        transform: translateX(-120%);
+        transition: all 0.4s ease-in-out;
+
+        @include respond(phone){
+            transform: translateX(0);
+            position: relative;
+            bottom: -100%;
+            max-width: 100%;
+            text-align: center;
+            font-size: 100%;
+
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        transition: all 0.4s ease-in-out; 
+       
+    }   
+       
+
+    &:hover {
+        figcaption {
+            transform: translateX(0);
+        }
+        img{
+            transform: scale(1.1);
+            @include respond(tab-port){transform: none;}
+        }
+    }
+   
+}
+
+

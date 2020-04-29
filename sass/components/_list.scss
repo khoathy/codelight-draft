@@ -1,0 +1,36 @@
+.list {
+    &__item {
+        list-style: none;
+        position: relative;
+        padding-left: 2rem;
+
+        &:after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 1.2rem;
+            background: $color-primary-light;
+        }
+
+        &-secondary {
+            list-style: none;
+            position: relative;
+            padding-left: 1.6rem;
+
+            &:after {
+                content: "";
+                width: 5px;
+                height: 2px;
+                float: left;
+                position: absolute;
+                left: 0;
+                top: 1.2rem;
+                background: $color-primary-light;
+            }
+
+        }
+    }
+}

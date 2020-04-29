@@ -1,0 +1,63 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    padding: 4rem;
+    padding-top: 6rem;
+    background-color: $color-primary-dark;
+    color: $color-gray-med;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @include respond(phone) {
+        padding: 6rem 3rem; 
+    }
+
+    &__help,
+    &__social {
+        padding: 1rem 4rem;
+        @include respond(tab-land){
+            padding: 1rem 2rem;
+        }
+        @include respond(tab-port){
+            padding: 1rem 1rem;
+        }
+        @include respond(phone){
+            padding: 1rem 0rem;
+        }
+
+        ul {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $color-gray-med;
+                font-weight: 300;
+                &:hover {
+                    color: $color-highlight;
+                }
+            }
+        }
+    }
+
+
+    &__logo {
+        height: 5rem;
+        opacity: 0.6;
+        margin: 1rem auto;
+        display: block;    
+    }
+
+    &__copyright {
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
+
+    &__portfolio-link {
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+}

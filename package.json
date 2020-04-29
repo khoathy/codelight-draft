@@ -1,0 +1,17 @@
+{
+  "name": "codelight",
+  "version": "1.0.0",
+  "main": "\t",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Kathy KhoaThy",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "description": ""
+}

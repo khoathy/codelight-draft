@@ -1,0 +1,88 @@
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.8;
+    color: $color-gray;
+    background-color: $color-white;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+.heading-primary {
+    font-size: 5.6rem;
+    font-weight: 800;
+    color: $color-primary;
+    text-transform: none;
+    line-height: 1.6;
+}
+
+.heading-secondary {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    font-weight: 600;
+    word-spacing: 0.5rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+
+}
+
+// .heading-tertiary {
+//     font-size: 3rem;
+//     font-weight: 600;
+//     text-transform: uppercase;
+//     line-height: 1.5;
+//     margin-bottom: 1.6rem;
+    
+// }
+
+.heading-bold {
+    font-weight: 600;
+}
+
+.heading-tiny{
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.paragraph {
+    margin: 0 auto;
+    width: 70%;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    @include respond(tab-port){
+        width: 90%;
+    }
+    @include respond(phone){
+        width: 100%;
+    }
+}
+
+.pricetag {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: $color-white;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.card__title {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-primary-light;
+}
+
+.card__description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}

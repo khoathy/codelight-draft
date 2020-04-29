@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+
+    &:not(:last-child){
+        @include respond(phone){
+            margin-bottom: 2.5rem;
+        }
+    }   
+    &__wrapper {
+        min-height: 30rem;
+        margin: 0.5rem;
+        position: relative;
+        border-radius: 2px;
+        padding: 2rem;
+        background-color: $color-white-2;
+        color: $color-gray;
+    }
+
+    &__description {
+        min-height: 5rem; 
+    }
+
+    img {
+        height: 16rem;
+        margin: 1rem auto;
+        object-fit: cover;
+        object-position: top;
+        border: solid 2px $color-white;
+        transition: transform 1s ease-out;
+        @include respond(phone){
+            min-height: 35vh;
+        }
+
+    }
+
+    &:hover {
+        transform: translateY(-2rem);
+        @include respond(tab-port){
+            transform: translateY(-1rem) rotate(-2deg);
+        }
+    }
+}

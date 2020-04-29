@@ -1,0 +1,68 @@
+.section-about,
+.section-services,
+.section-portfolio {
+    position: relative;
+    padding: 8rem 15rem;
+    @include respond(tab-land) {
+        padding: 8rem 15rem;
+    }
+    @include respond(tab-port) {
+        padding: 8rem 10rem;
+    }
+    @include respond(phone) {
+        padding: 6rem 4rem;
+    }
+
+    .row {
+        position: relative;
+    }
+    
+    .btn {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 1.6rem;
+    }
+}
+
+
+.section-about {
+    padding-bottom: 2rem;
+
+    &__heading{
+        h2 {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;      
+        }
+    }
+
+    .btn {
+        z-index: 1;
+    }  
+}
+
+
+.decor-left {
+    width: 8vw;
+    position: absolute;
+    bottom: -35rem;
+    left: -2rem;
+    transform-origin: bottom left;
+    transition: all 0.5s ease-out;
+    @include respond(tab-land){bottom: -15rem;}
+}
+
+.decor-right {
+    width: 9vw;
+    position: absolute;
+    bottom: -10rem;
+    right: 2rem;
+    transform-origin: bottom right;
+    @include respond(tab-land){bottom: -15rem;}
+}
+
+.section-portfolio {
+    padding-bottom: 15rem;
+}
