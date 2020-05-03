@@ -6,12 +6,14 @@
     @include respond(phone) {
         height: 100vh;
     }
+
     &__shade {
-        width: 100vw;
-        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background: url(../img/shade.svg);
-        background-size: cover;
-        background-position: bottom-right;
         background-repeat: no-repeat;
     }
 
@@ -20,16 +22,15 @@
         backface-visibility: hidden;
         -webkit-transform: translateZ(0) scale(1.0, 1.0);
         transform: translateZ(0);
-        
     }
 
     &__textbox {
         max-width: 55rem;
         width: fit-content;
         position: absolute;
-        top: 45%;
-        left: 65%;
-        transform: translate(-50%,-50%) translateZ(0);
+        top: 30%;
+        left: 15%;
+        transform: translateZ(0);
         @include respond(phone) {
             top: 35%;
             left: 50%;
@@ -42,18 +43,13 @@
             margin-top: 3rem;
             font-size: 120%;
         }
-        
     }
 
-
-
     &__display {
-        opacity: 0.1;
-        width: 30%;
+        width: 33%;
         position: absolute;
-        top: 30vh;
-        left: 5rem;
-        transform: rotate(-30deg);
+        bottom: 5%;
+        right: 10%;
 
         @include respond(tab-land) {
             left: 15%;
@@ -71,8 +67,8 @@
 
     &__back {
         position: absolute;
-        bottom: -5rem;
-        background-repeat: repeat-x;
+        bottom: -3rem;
+        background-repeat: no-repeat;
         width: 100%;
         height: 100%;
         background-size: 90rem;
@@ -86,7 +82,7 @@
     
     &__fore {
         position: absolute;
-        bottom: -17rem;
+        bottom: -18rem;
         height: 100%;  
         width: 100%;
         background-size: 90rem;

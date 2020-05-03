@@ -45,7 +45,7 @@ html {
       font-size: 75%; } }
 
 ::selection {
-  background-color: #dcdaff; }
+  background-color: #daeaff; }
 
 body {
   font-family: 'Muli', sans-serif;
@@ -339,11 +339,12 @@ input[type=submit]:active {
     .header {
       height: 100vh; } }
   .header__shade {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: url(../img/shade.svg);
-    background-size: cover;
-    background-position: bottom-right;
     background-repeat: no-repeat; }
   .header__middle-2 {
     -webkit-backface-visibility: hidden;
@@ -354,9 +355,9 @@ input[type=submit]:active {
     max-width: 55rem;
     width: fit-content;
     position: absolute;
-    top: 45%;
-    left: 65%;
-    transform: translate(-50%, -50%) translateZ(0); }
+    top: 30%;
+    left: 15%;
+    transform: translateZ(0); }
     @media only screen and (max-width: 37.5em) {
       .header__textbox {
         top: 35%;
@@ -368,12 +369,10 @@ input[type=submit]:active {
       margin-top: 3rem;
       font-size: 120%; }
   .header__display {
-    opacity: 0.1;
-    width: 30%;
+    width: 33%;
     position: absolute;
-    top: 30vh;
-    left: 5rem;
-    transform: rotate(-30deg); }
+    bottom: 5%;
+    right: 10%; }
     @media only screen and (max-width: 75em) {
       .header__display {
         left: 15%; } }
@@ -387,8 +386,8 @@ input[type=submit]:active {
         left: 55%; } }
   .header__back {
     position: absolute;
-    bottom: -5rem;
-    background-repeat: repeat-x;
+    bottom: -3rem;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     background-size: 90rem;
@@ -400,7 +399,7 @@ input[type=submit]:active {
         bottom: 0rem; } }
   .header__fore {
     position: absolute;
-    bottom: -17rem;
+    bottom: -18rem;
     height: 100%;
     width: 100%;
     background-size: 90rem;

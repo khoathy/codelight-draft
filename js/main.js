@@ -8,13 +8,13 @@ $(document).ready(function(){
         var wScroll = $(this).scrollTop();
         if(wScroll <= containerHeight) {
             $('.header__middle-1').css({
-                'transform': 'translate(0%, '+ (wScroll/40) +'%)'
+                'transform': 'translate(0%, '+ (wScroll/90) +'%)'
             });
             $('.header__middle-2').css({
-                'transform': 'translate(0%, '+ (wScroll/4) +'%)'
+                'transform': 'translate(0%, '+ (wScroll/8) +'%)'
             });
             $('.header__back').css({
-                'transform': 'translate(0%, '+ wScroll/80 +'%)'
+                'transform': 'translate(0%, '+ wScroll/70 +'%)'
             });
             $('.header__fore').css({
                 'transform': 'translate(0%, -'+ wScroll/50 +'%)'
