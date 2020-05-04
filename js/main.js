@@ -8,10 +8,10 @@ $(document).ready(function(){
         var wScroll = $(this).scrollTop();
         if(wScroll <= containerHeight) {
             $('.header__middle-1').css({
-                'transform': 'translate(0%, '+ (wScroll/90) +'%)'
+                'transform': 'translate(0%, '+ (wScroll/60) +'%)'
             });
             $('.header__middle-2').css({
-                'transform': 'translate(0%, '+ (wScroll/8) +'%)'
+                'transform': 'translate(0%, '+ (wScroll/5) +'%)'
             });
             $('.header__back').css({
                 'transform': 'translate(0%, '+ wScroll/70 +'%)'

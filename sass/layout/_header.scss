@@ -28,8 +28,8 @@
         max-width: 55rem;
         width: fit-content;
         position: absolute;
-        top: 30%;
-        left: 15%;
+        top: 35%;
+        left: 12%;
         transform: translateZ(0);
         @include respond(phone) {
             top: 35%;
@@ -65,15 +65,21 @@
         
     }
 
-    &__back {
+    
+    &__back,
+    &__fore {
         position: absolute;
-        bottom: -3rem;
-        background-repeat: no-repeat;
+        background-size: 85rem;
         width: 100%;
         height: 100%;
-        background-size: 90rem;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+    } 
+
+    &__back {
+        top: 15rem;
+        transform: rotateX(180);
         background-image: url(../img/back-bg.svg);
-        background-position: 0% 100%;
         @include respond(phone) {
             background-size: 70rem;
             bottom: 0rem;
@@ -82,18 +88,17 @@
     
     &__fore {
         position: absolute;
-        bottom: -18rem;
+        bottom: -8rem;
         height: 100%;  
         width: 100%;
-        background-size: 90rem;
-        background-repeat: repeat-x;
+        background-position : 100% 100%;
         background-image: url(../img/fore-bg.svg);
         image-rendering: crisp-edges;
         image-rendering: -moz-crisp-edges;          /* Firefox */
         image-rendering: -o-crisp-edges;            /* Opera */
         image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
         -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
-        background-position : 0% 100%;
+        
         // background-color:rgba(green,0.55);
         @include respond(phone) {
             background-size: 70rem;
