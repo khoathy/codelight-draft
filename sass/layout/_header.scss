@@ -95,8 +95,8 @@
     
     &__fore {
         position: absolute;
-        background-size: 90rem;
-        bottom: -8rem;
+        background-size: 60vw;
+        bottom: -15rem;
         height: 100%;  
         width: 100%;
         background-position : 100% 100%;
@@ -107,7 +107,12 @@
         image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
         -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
         
-        // background-color:rgba(green,0.55);
+        @include respond(tab-land) {
+            background-size: 90%;
+        }
+        @include respond(tab-port) {
+            background-size: 100%;
+        }
         @include respond(phone) {
             background-size: 90rem;
             bottom: -12rem;

@@ -50,6 +50,11 @@ body {
   background-color: #fff;
   padding: 0;
   text-rendering: optimizeLegibility; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      width: 100%;
+      line-height: 1.6;
+      font-size: 1.4rem; } }
 
 .heading-primary {
   font-size: 5.6rem;
@@ -64,7 +69,8 @@ body {
       font-size: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      width: 100%; } }
+      width: 100%;
+      font-size: 3.5rem; } }
 
 .heading-secondary {
   color: #0041c4;
@@ -404,8 +410,8 @@ input[type=submit]:active {
         background-size: 100%; } }
   .header__fore {
     position: absolute;
-    background-size: 90rem;
-    bottom: -8rem;
+    background-size: 60vw;
+    bottom: -15rem;
     height: 100%;
     width: 100%;
     background-position: 100% 100%;
@@ -419,6 +425,12 @@ input[type=submit]:active {
     /* Webkit (non-standard naming)*/
     -ms-interpolation-mode: nearest-neighbor;
     /* IE (non-standard property) */ }
+    @media only screen and (max-width: 75em) {
+      .header__fore {
+        background-size: 90%; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__fore {
+        background-size: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .header__fore {
         background-size: 90rem;

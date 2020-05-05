@@ -17,7 +17,7 @@ $(document).ready(function(){
                 'transform': 'translate(0%, '+ wScroll/17 +'%)'
             });
             $('.header__fore').css({
-                'transform': 'translate(0%, -'+ wScroll/50 +'%)'
+                'transform': 'translate(0%, -'+ wScroll/70 +'%)'
             });
         }
        
