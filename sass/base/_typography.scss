@@ -16,6 +16,14 @@ body {
     color: $color-primary;
     text-transform: none;
     line-height: 1.6;
+    @include respond(tab-port){
+        width: 90%;
+        line-height: 1.2;
+        font-size: 4.5rem;
+    }
+    @include respond(phone){
+        width: 100%;
+    }
 }
 
 .heading-secondary {
@@ -28,15 +36,6 @@ body {
     text-align: center;
 
 }
-
-// .heading-tertiary {
-//     font-size: 3rem;
-//     font-weight: 600;
-//     text-transform: uppercase;
-//     line-height: 1.5;
-//     margin-bottom: 1.6rem;
-    
-// }
 
 .heading-bold {
     font-weight: 600;

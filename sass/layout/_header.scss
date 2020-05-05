@@ -31,10 +31,12 @@
         top: 35%;
         left: 12%;
         transform: translateZ(0);
-        @include respond(phone) {
-            top: 35%;
-            left: 50%;
+
+        @include respond(tab-port) {
+            top: 20%;
+            width: 85vw;
         }
+
         &-content {
             color: $color-primary;
         }
@@ -42,6 +44,14 @@
             color: $color-gray-dark;
             margin-top: 3rem;
             font-size: 120%;
+
+            @include respond(tab-land) {
+                width: 45vw;
+            }
+            @include respond(tab-port) {
+                width: 85vw;
+            }
+
         }
     }
 
@@ -52,17 +62,14 @@
         right: 10%;
 
         @include respond(tab-land) {
-            left: 15%;
+            right: 5%;
+            width: 36%;
         }
         @include respond(tab-port) {
-            left: 10%;
-        }
-        @include respond(phone) {
-            height: 55vh;
+            height: 45vh;
             width: auto;
-            left: 55%;
-        }
-        
+            right: 15%;
+        }   
     }
 
     
@@ -80,9 +87,9 @@
         // height: 70vh;
         background-size: cover;
         background-image: url(../img/back.svg);
-        @include respond(phone) {
-            background-size: 70rem;
-            bottom: 0rem;
+
+        @include respond(tab-land) {
+            background-size: 100%;
         }
     }
     
@@ -102,8 +109,8 @@
         
         // background-color:rgba(green,0.55);
         @include respond(phone) {
-            background-size: 70rem;
-            bottom: -10rem;
+            background-size: 90rem;
+            bottom: -12rem;
         }
     }
 }

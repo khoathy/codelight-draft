@@ -77,6 +77,10 @@
         height: 3rem;
         margin: 2rem 8rem;
         transition: all ease-in 0.2s;
+
+        @include respond(phone){
+            margin: 2rem 6rem;
+        }
     }
 
 //right    
