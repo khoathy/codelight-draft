@@ -364,7 +364,7 @@ input[type=submit]:active {
   .header__display {
     width: 33%;
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     right: 10%; }
     @media only screen and (max-width: 75em) {
       .header__display {
@@ -379,21 +379,21 @@ input[type=submit]:active {
         left: 55%; } }
   .header__back, .header__fore {
     position: absolute;
-    background-size: 85rem;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-position: 100% 100%; }
   .header__back {
-    top: 15rem;
-    transform: rotateX(180);
-    background-image: url(../img/back-bg.svg); }
+    bottom: 0;
+    background-size: cover;
+    background-image: url(../img/back.svg); }
     @media only screen and (max-width: 37.5em) {
       .header__back {
         background-size: 70rem;
         bottom: 0rem; } }
   .header__fore {
     position: absolute;
+    background-size: 90rem;
     bottom: -8rem;
     height: 100%;
     width: 100%;
@@ -493,8 +493,8 @@ input[type=submit]:active {
     box-shadow: 0 1px 1rem rgba(128, 128, 128, 0.2);
     border-bottom-left-radius: 5px; }
   .nav__sticky .nav__logo {
-    height: 5rem;
-    margin-top: 0;
+    height: 3.5rem;
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: transparent; }
   .nav__sticky .nav__right,
@@ -636,7 +636,7 @@ input[type=submit]:active {
 
 .section-about {
   padding-bottom: 2rem;
-  background-color: #f5f5fc; }
+  background-color: #f8faff; }
   .section-about__heading h2 {
     display: inline-block;
     position: absolute;
